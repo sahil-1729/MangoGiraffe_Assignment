@@ -124,7 +124,6 @@ export default function StatusPage() {
         signatureId: targetId,
         documentId: signaturestatus?.signers[0]?.id,
         status: signaturestatus?.status,
-        // createdAt: new Date(Date.now() - Math.random() * 86400000).toISOString(),
         // documentName: "Contract_Agreement.pdf",
         // signerEmail: "signer@example.com",
       }
@@ -133,7 +132,20 @@ export default function StatusPage() {
       // Add completion details if sign_complete
       if (mockStatus.status === "sign_complete") {
         // mockStatus.completedAt = new Date().toISOString()
-        mockStatus.downloadUrl = `https://api.example.com/documents/${mockStatus.documentId}/download`
+        const downloadResponse = await fetch('/api/download', {
+          method: 'POST',
+          headers: {
+            "x-client-id": credentials.clientId,
+            "x-client-secret": credentials.clientSecret,
+            "x-product-instance-id": credentials.productInstanceId,
+          },
+          body: JSON.stringify({ requestId: requestId })
+        })
+
+        const downloadResponseBody = await downloadResponse.json()
+
+        const Url = downloadResponseBody?.downloadUrl
+        mockStatus.downloadUrl = Url
       }
 
       setStatus(mockStatus)
