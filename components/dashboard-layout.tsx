@@ -83,7 +83,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
               <Button variant="ghost" size="sm" className="lg:hidden" onClick={() => setSidebarOpen(true)}>
                 <Menu className="h-5 w-5" />
               </Button>
-              <h1 className="font-manrope font-semibold text-xl text-foreground">Document Management</h1>
+              {/* <h1 className="font-manrope font-semibold text-xl text-foreground">Document Management</h1> */}
             </div>
 
             {/* <div className="flex items-center gap-4">

@@ -11,11 +11,10 @@ export default function LandingPage() {
         {/* Welcome Section */}
         <div className="text-center space-y-4">
           <h1 className="font-manrope font-bold text-4xl text-foreground text-balance">
-            Professional Document Signing Platform
+            Document Signing Platform Using aadhar Esign
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Streamline your document workflow with secure API integration, real-time status tracking, and professional
-            document management.
+            Streamline your document workflow with secure API integration, real-time status tracking, and professional document management.
           </p>
         </div>
 

@@ -493,7 +493,7 @@ export default function UploadPage() {
           <CardContent>
             <ol className="list-decimal list-inside space-y-2 text-sm">
               <li>Upload your PDF document and fill in the required details</li>
-              <li>Provide signer information including identifier, name, and birth year</li>
+              <li>Provide signer information including name according to your aadhar card, and birth year</li>
               <li>Copy the signature URL and share it with the signer</li>
               <li>The signer will complete the signing process on the Setu platform</li>
               <li>Use the Status page to track progress and download completed documents</li>

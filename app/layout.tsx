@@ -16,7 +16,6 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "DocuSign Dashboard - Professional Document Management",
   description: "Secure document signing and management platform for businesses",
-  generator: "v0.app",
 }
 
 export default function RootLayout({
