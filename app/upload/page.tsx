@@ -59,7 +59,7 @@ export default function UploadPage() {
 
   const [documentName, setDocumentName] = useState("")
   const [documentPassword, setDocumentPassword] = useState("")
-  const [signerIdentifier, setSignerIdentifier] = useState("")
+  const [signerIdentifier, setSignerIdentifier] = useState(`${crypto.randomUUID()}`)
   const [signerDisplayName, setSignerDisplayName] = useState("")
   const [signerBirthYear, setSignerBirthYear] = useState("")
   const [redirectUrl, setRedirectUrl] = useState("http://setu.co")
